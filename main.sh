@@ -23,6 +23,12 @@ fun_tools="install/fun.txt"
 themes="install/theme.txt"
 wine="install/wine.txt"
 
+# Install yay before installing anything
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+
 # Install applications
 install_app "$gnome_applications"
 install_app "$terminal_tools"

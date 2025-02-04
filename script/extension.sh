@@ -11,8 +11,8 @@ nautilus_extension() {
     yay -S nautilus-open-any-terminal # (AUR)
 }
 
+# ------------------------------------- Firefox plugins -----------------------
 firefox_extension() {
-    # ------------------------------------- Firefox plugins -----------------------
     # Go to https://addons.mozilla.org/en-US/firefox/
     # and search for a plugin you want to install.
     # Right-click the "Add to Firefox"-Button and copy link
@@ -68,6 +68,7 @@ firefox_extension() {
     echo -e "${GREEN}\nAll extensions have been downloaded and extracted.${NC}"
 }
 
+# ------------------------------------- Gnome extensions ----------------------
 gnome_extension() {
     array=(
         https://extensions.gnome.org/extension/615/appindicator-support/                  # AppIndicator

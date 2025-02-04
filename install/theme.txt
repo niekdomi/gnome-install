@@ -1,5 +1,5 @@
-bibata-cursor-theme          # Bibata cursors (AUR)
-papirus-icon-theme"          # Papirus icons
+bibata-cursor-theme-bin      # Bibata cursors (AUR)
+papirus-icon-theme           # Papirus icons
 adw-gtk-theme                # GTK4 like theme for GTK2/3 application
 # papirus-folders            # Folder color theme for papirus theme (AUR)
 # tela-icon-theme-purple-bin # Tela icons (AUR)

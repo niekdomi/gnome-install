@@ -42,7 +42,6 @@ install_font() {
 
     font_links=(
         https://github.com/pjobson/Microsoft-365-Fonts
-        # https://github.com/ryanoasis/nerd-fonts # Would install all nerdfonts (is way too large)
     )
 
     for font in "${font[@]}"; do

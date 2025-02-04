@@ -1,8 +1,8 @@
 firefox             # Firefox browser
-# localsed-bin      # Local network file transfer (AirDrop alternative) (AUR)
+# localsend-bin     # Local network file transfer (AirDrop alternative) (AUR)
 # r-quick-share-bin # Share files quickly (AUR)
 spotify             # Spotify for Linux (AUR)
-teams-fr-linux      # Teams client for Linux (AUR)
+teams-for-linux     # Teams client for Linux (AUR)
 thunderbird         # Thunderbird mail
 vesktop             # Discord with plugins and themes (AUR)
 zapzap              # qt6-based Whatsapp client for Linux (AUR)

@@ -1,2 +1,0 @@
-ttf-firacode-nerd
-ttf-cascadia-code-nerd
