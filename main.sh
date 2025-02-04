@@ -24,7 +24,7 @@ themes="install/theme.txt"
 wine="install/wine.txt"
 
 # Install yay before installing anything
-sudo pacman -S --needed git base-devel
+sudo pacman -S --needed git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
@@ -52,6 +52,7 @@ install_theme
 # Extensions
 nautilus_extension
 firefox_extension
+gnome_extension
 
 # Configs
 bluetooth_config
@@ -60,8 +61,9 @@ git_config
 yay_config
 shell_config
 system_config
-gnome_config # MUST BE THE LAST CONFIGURATION
 
 git clone https://github.com/domi413/dotfiles
 cd dotfiles
 ./update_dotfiles.sh -l
+
+gnome_config # MUST BE THE LAST CONFIGURATION

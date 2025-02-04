@@ -62,11 +62,8 @@ git_config() {
 }
 
 yay_config() {
-    # Enable review option to yay
+    # Enable review option
     yay --editmenu --save
-
-    # Cleanup cache
-    yay -Scc
 }
 
 gnome_config() {
