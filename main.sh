@@ -45,8 +45,8 @@ install_font
 install_theme
 
 # Install & Configure KVM
-install_kvm
-start_kvm
+# install_kvm
+# start_kvm
 
 # Extensions
 nautilus_extension
@@ -57,12 +57,6 @@ bluetooth_config
 cups_config
 git_config
 yay_config
-gnome_config
 shell_config
 system_config
-
-# Reboot
-echo -e "${GREEN}done${NC}"
-echo -e "${YELLOW}Rebooting in 10 seconds...${NC}"
-sleep 10
-reboot
+gnome_config # MUST BE THE LAST CONFIGURATION

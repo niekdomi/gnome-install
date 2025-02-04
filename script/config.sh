@@ -70,7 +70,7 @@ yay_config() {
 }
 
 gnome_config() {
-    # Enable fractional scaling
+    # Enable fractional scaling (MUST BE THE LAST COMMAND)
     gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 }
 
