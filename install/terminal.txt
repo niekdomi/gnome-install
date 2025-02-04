@@ -1,0 +1,24 @@
+bat               # Better cat alternative with syntax highlighting
+btop              # Terminal based system monitor
+curl              # Download files
+eza               # Colorful ls
+# fsh             # Shell
+fish-it           # Shell (AUR)
+git               # Distributed version control system
+key               # Create custom keybindings
+lazgit            # TUI Git interface
+npm               # Node.js package manager, required for neovim
+onerive-abraunegg # OneDrive support (AUR)
+onefetch          # Like fastfetch but for git
+pnpm              # Dependency for live-server
+ripgep-all        # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+starship          # Shell prompt
+tokei             # Count code lines
+tealder           # Faster tldr written in rust
+trash-ci          # Control trash through terminal
+tree-siter-cli    # Required for latex treesitter
+wget              # Download files
+wl-cipboard       # Required for neovim to copy to clipboard
+yazi              # Terminal file manager
+zip               # zip, zap, zup
+zoxde             # Better cd for faster file system navigation

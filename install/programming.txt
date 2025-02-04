@@ -1,0 +1,27 @@
+# Editor
+# intellij-idea-ultimate-edition  # Intellij
+neovim                            # Neovim
+obsidian                          # Obsidian
+# vscodium                        # VSCode with better privacy (AUR)
+# vscodium-git-marketplace        # VSCodium with vscode marketplace (AUR)
+# code                            # Code OSS (basically vscode before MS bullshit added, is available in the extra repo)
+# visual-studio-code-bin          # Use this option if you need MS plugins like live preview or ssh (AUR)
+# zed                             # Zeditor
+zed-preview-bin                   # Zeditor (AUR)
+
+# Compiler, Formatter, ...
+clang           # C/C++ compiler
+# delv          # Go debugger
+# dotet-sdk     # .NET sdk
+gcc             # C/C++ compiler
+# gdb           # Debugger
+# go            # Go language
+# jk-openjdk    # Java sdk
+# netcoredb     # .NET debugger (AUR)
+python          # Python 3
+# pytho-debugpy # Python debugger
+shellcheck      # Bash linter
+shfmt           # Bash formatter
+tectonic        # LaTex engine
+texlive-basic # LaTeX compiler and libraries
+texlive-binextra perl-yaml-tiny perl-file-homedir # Latexindent (LaTeX formatter)

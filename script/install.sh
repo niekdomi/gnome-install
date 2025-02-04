@@ -1,0 +1,79 @@
+# ------------------------------------- Application ---------------------------
+install_app() {
+    local file="$1"
+
+    # Check if the file exists
+    if [[ -f "$file" ]]; then
+        while IFS= read -r application; do
+            # Remove inline comments and trim whitespace
+            application=$(echo "$application" | sed 's/#.*//' | xargs)
+
+            # Skip empty lines
+            [[ -z "$application" ]] && continue
+
+            echo -e "${YELLOW}Installing $application...${NC}"
+            yay -S "$application" --noconfirm >/dev/null 2>&1
+            echo -e "${GREEN}Installed $application${NC}"
+        done <"$file"
+    else
+        echo -e "${RED}Error: File '$file' not found.${NC}"
+        exit 1
+    fi
+}
+
+# ------------------------------------- Theme ---------------------------------
+install_theme() {
+    #-------------------------------------- Firefox & Thunderbird GTK4 theme ------
+    echo -e "${YELLOW}\n\nInstalling Firefox GTK4 theme...${NC}"
+    curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
+
+    echo -e "${YELLOW}\n\nInstalling Thunderbird GTK4 theme...${NC}"
+    git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme && cd thunderbird-gnome-theme || exit
+    ./scripts/auto-install.sh
+
+}
+
+# ------------------------------------- Font -----------------------------------
+install_font() {
+    font=(
+        "ttf-cascadia-code-nerd"
+        "ttf-firacode-nerd"
+    )
+
+    font_links=(
+        https://github.com/pjobson/Microsoft-365-Fonts
+        # https://github.com/ryanoasis/nerd-fonts # Would install all nerdfonts (is way too large)
+    )
+
+    for font in "${font[@]}"; do
+        echo -e "${YELLOW}Installing $font...${NC}"
+        yay -S "$font" --noconfirm >/dev/null 2>&1
+        echo -e "${GREEN}Installed $font${NC}"
+    done
+
+    for link in "${font_links[@]}"; do
+        if [[ "$link" == *.zip ]]; then
+            repo_name=$(basename "$link")
+            echo -e "${YELLOW}\n\nDownloading $link...${NC}"
+
+            download_path="$HOME/Downloads/$repo_name"
+
+            wget -O "$download_path" "$link"
+            unzip -o -d "$HOME/Downloads/${repo_name%.*}" "$download_path"
+
+            move_path="$HOME/Downloads/${repo_name%.*}"
+        else
+            repo_name=$(basename "${link%/*}") # Removes the last part of URL if it's not a .git repository
+
+            echo -e "${YELLOW}\n\nCloning $link into $HOME/Downloads/$repo_name...${NC}"
+
+            # Clone the repository
+            git clone --depth 1 "$link" "$HOME/Downloads/$repo_name" 2>/dev/null || echo -e "${RED}Failed to clone $link. Check if the URL is a full repository.${NC}"
+
+            move_path="$HOME/Downloads/${repo_name%.*}"
+        fi
+
+        echo -e "${YELLOW}\n\nMoving fonts to /usr/share/fonts/${NC}"
+        sudo cp -r "$move_path" /usr/share/fonts/
+    done
+}
