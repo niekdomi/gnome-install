@@ -15,11 +15,11 @@ LIGHTBLUE='\033[1;34m' # Configs
 NC='\033[0m'           # No Color (reset to default value)
 
 # Include application lists
+fun_tools="install/fun.txt"
 gnome_applications="install/gnome.txt"
-terminal_tools="install/terminal.txt"
 internet_tools="install/internet.txt"
 programming_tools="install/programming.txt"
-fun_tools="install/fun.txt"
+terminal_tools="install/terminal.txt"
 themes="install/theme.txt"
 wine="install/wine.txt"
 
@@ -28,6 +28,7 @@ sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
+cd ..
 
 # Install applications
 install_app "$gnome_applications"
@@ -60,3 +61,7 @@ yay_config
 shell_config
 system_config
 gnome_config # MUST BE THE LAST CONFIGURATION
+
+git clone https://github.com/domi413/dotfiles
+cd dotfiles
+./update_dotfiles.sh -l

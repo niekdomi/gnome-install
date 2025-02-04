@@ -2,8 +2,7 @@ bat                # Better cat alternative with syntax highlighting
 btop               # Terminal based system monitor
 curl               # Download files
 eza                # Colorful ls
-# fish             # Shell
-fish-git           # Shell (AUR)
+fish               # Shell
 git                # Distributed version control system
 keyd               # Create custom keybindings
 lazygit            # TUI Git interface
