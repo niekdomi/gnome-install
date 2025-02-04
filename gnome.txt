@@ -1,0 +1,27 @@
+baobab                 # GTK 4 Disk Usage Analyzer
+extension-manager      # GNOME extension manager
+fragments              # GTK 4 frontend for Transmission
+gdm                    # GNOME Display Manager
+gdm-settings           # GNOME Display Manager settings GUI
+ghex                   # GTK4 Hex Editor
+gnome-backgrounds      # GNOME default wallpapers
+gnome-calendar         # Calendar application
+gnome-clocks           # Clock app for time management
+gnome-color-manager    # Color management tool
+gnome-control-center   # GNOME system settings
+gnome-disk-utility     # Disk management tool
+gnome-font-viewer      # View and install fonts
+gnome-keyring          # Manages passwords and keys
+gnome-menus            # GNOME application menus
+gnome-session          # Manages GNOME session
+gnome-settings-daemon  # Handles various GNOME settings
+gnome-shell            # Core part of GNOME desktop
+gnome-sound-recorder   # Sound recording tool
+gnome-sudoku           # GNOME Sudoku game
+metadata-cleaner       # Clean metadata from files
+nautilus               # GNOME file manager
+papers                 # PDF viewer
+resources              # System monitor tool
+rnote                  # Note-taking app (alternative to OneNote)
+showtime               # Video player
+snapshot               # Screenshot tool
