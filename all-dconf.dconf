@@ -226,7 +226,7 @@ command='bash -c "if [[ $(gsettings get org.gnome.settings-daemon.plugins.color 
 name='Toggle night light'
 
 [org/gnome/shell]
-enabled-extensions=['app-hider@lynith.dev', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'dash-to-dock@micxgx.gmail.com','date-menu-formatter@marcinjakubowski.github.com'], 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com', 
+enabled-extensions=['app-hider@lynith.dev', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'dash-to-dock@micxgx.gmail.com','date-menu-formatter@marcinjakubowski.github.com'], 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com',
 favorite-apps=['firefox.desktop', 'com.mitchellh.ghostty.desktop', 'org.gnome.Nautilus.desktop']
 last-selected-power-profile='performance'
 
@@ -436,7 +436,7 @@ include-public-ip=true
 include-static-gpu-info=false
 menu-centered=true
 monitor-cmd='resources'
-network-speed-format=0
+network-speed-format=1
 show-battery=true
 show-fan=false
 show-gpu=false
