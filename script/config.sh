@@ -67,8 +67,18 @@ yay_config() {
 }
 
 gnome_config() {
-    # Enable fractional scaling (MUST BE THE LAST COMMAND)
+    # Fractional scaling (should already be enabled through dconf settings)
     gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+    echo -e "${LIGHTBLUE}\nLoading dconf settings...${NC}"
+
+    # Ensure the file exists before proceeding
+    if [[ -f "$ALL_SETTINGS_FILE" ]]; then
+        dconf load / <"$ALL_SETTINGS_FILE"
+        echo -e "${GREEN}\ndconf settings restored successfully...${NC}"
+    else
+        echo -e "${RED}\ndconf file not found...${NC}"
+    fi
 }
 
 shell_config() {
