@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO:
+# - gnome extension install have to be executed (manually ?) afterwards
+
 # Include sources
 source "script/config.sh"
 source "script/extension.sh"
@@ -24,11 +27,7 @@ themes="install/theme.txt"
 wine="install/wine.txt"
 
 # Install yay before installing anything
-sudo pacman -S --needed git base-devel --noconfirm
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
-cd ..
+install_yay
 
 # Install applications
 install_app "$gnome_applications"
@@ -52,18 +51,14 @@ install_theme
 # Extensions
 nautilus_extension
 firefox_extension
-gnome_extension
 
 # Configs
 bluetooth_config
 cups_config
 git_config
+gnome_config
 yay_config
 shell_config
-system_config
+dotfiles_config
 
-git clone https://github.com/domi413/dotfiles
-cd dotfiles
-./update_dotfiles.sh -l
-
-gnome_config # MUST BE THE LAST CONFIGURATION
+system_config # MUST BE THE END

@@ -1,5 +1,5 @@
 baobab                # GTK 4 Disk Usage Analyzer
-extension-manager     # GNOME extension manager
+extension-manager     # GNOME extension manager (AUR)
 eog                   # GNOME image viewer
 # loupe               # GNOME image viewer
 fragments             # GTK 4 frontend for Transmission

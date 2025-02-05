@@ -1,14 +1,14 @@
 # ------------------------------------- Nautilus extensions -------------------
 nautilus_extension() {
-    yay -S python-nautilus --noconfirm
+    yay -S python-nautilus --noconfirm >/dev/null 2>&1
 
     # Copy path
-    git clone https://github.com/chr314/nautilus-copy-path.git
+    git clone https://github.com/chr314/nautilus-copy-path.git >/dev/null 2>&1
     cd nautilus-copy-path || exit
-    make install
+    make install >/dev/null 2>&1
 
     # Open any terminal
-    yay -S nautilus-open-any-terminal # (AUR)
+    yay -S nautilus-open-any-terminal --noconfirm >/dev/null 2>&1 # (AUR)
 }
 
 # ------------------------------------- Firefox plugins -----------------------
@@ -60,12 +60,13 @@ firefox_extension() {
         url="${extensions[$id]}"
         file_name=$(basename "$url")
         save_path="$firefox_dist_path/$id.xpi"
-        echo "Downloading and installing $file_name with ID $id"
+        echo -e "${YELLOW}Downloading and installing $file_name with ID $id...${NC}"
+
         # Download the .xpi file using its ID as the file name
-        sudo wget -O "$save_path" "$url" && echo "Installed $file_name to $save_path"
+        sudo wget -O "$save_path" "$url" >/dev/null 2>&1 && echo -e "${GREEN}Installed $file_name to $save_path${NC}"
     done
 
-    echo -e "${GREEN}\nAll extensions have been downloaded and extracted.${NC}"
+    echo -e "${GREEN}\nAll extensions have been installed.${NC}"
 }
 
 # ------------------------------------- Gnome extensions ----------------------
@@ -90,8 +91,8 @@ gnome_extension() {
     for i in "${array[@]}"; do
         EXTENSION_ID=$(curl -s $i | grep -oP 'data-uuid="\K[^"]+')
         VERSION_TAG=$(curl -Lfs "https://extensions.gnome.org/extension-query/?search=$EXTENSION_ID" | jq '.extensions[0] | .shell_version_map | map(.pk) | max')
-        wget -O "${EXTENSION_ID}".zip "https://extensions.gnome.org/download-extension/${EXTENSION_ID}.shell-extension.zip?version_tag=$VERSION_TAG"
-        gnome-extensions install --force "${EXTENSION_ID}".zip
+        wget -O "${EXTENSION_ID}".zip "https://extensions.gnome.org/download-extension/${EXTENSION_ID}.shell-extension.zip?version_tag=$VERSION_TAG" >/dev/null 2>&1
+        gnome-extensions install --force "${EXTENSION_ID}".zip >/dev/null 2>&1
         if ! gnome-extensions list | grep --quiet "${EXTENSION_ID}"; then
             busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s "${EXTENSION_ID}"
         fi

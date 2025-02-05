@@ -1,7 +1,7 @@
 # ------------------------------------- Bluetooth -----------------------------
 bluetooth_config() {
     sudo modprobe btusb
-    pacman -Ss bluetooth
+    # pacman -Ss bluetooth
     sudo dmesg | grep -i bluetooth
 
     # Start bluetooth deamon
@@ -13,7 +13,7 @@ bluetooth_config() {
 # ------------------------------------- Printer manager -----------------------
 cups_config() {
     echo -e "${YELLOW}\n\nInstalling CUPS...${NC}"
-    sudo pacman -S cups --noconfirm
+    sudo pacman -S cups --noconfirm >/dev/null 2>&1
 
     sudo systemctl start cups.service
     sudo systemctl enable cups.service
@@ -61,14 +61,18 @@ git_config() {
     set -e
 }
 
+# ------------------------------------- yay -----------------------------------
 yay_config() {
     # Enable review option
+    echo -e "${LIGHTBLUE}\n\nEnabling editmenu for yay...${NC}"
     yay --editmenu --save
 }
 
+# ------------------------------------- Gnome ---------------------------------
 gnome_config() {
     # Fractional scaling (should already be enabled through dconf settings)
-    gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+    # echo -e "${LIGHTBLUE}\n\nEnabling fractional scaling...${NC}"
+    # gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 
     echo -e "${LIGHTBLUE}\nLoading dconf settings...${NC}"
 
@@ -81,13 +85,23 @@ gnome_config() {
     fi
 }
 
+# ------------------------------------- shell ---------------------------------
 shell_config() {
     # Change default shell
+    echo -e "${LIGHTBLUE}\n\nChanging default shell...${NC}"
     chsh -s /bin/fish
 
     # TODO: Symlink to gnome-terminal (currently buggy in ghostty)
 }
 
 system_config() {
+    # MUST BE THE LAST COMMAND
     sudo systemctl enable --now gdm.service
+}
+
+# ------------------------------------- Dotfiles ------------------------------
+dotfiles_config() {
+    git clone https://github.com/domi413/dotfiles
+    cd dotfiles
+    ./update_dotfiles.sh -l
 }

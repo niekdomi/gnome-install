@@ -1,3 +1,19 @@
+# ------------------------------------- yay -----------------------------------
+install_yay() {
+    if ! command -v yay &>/dev/null; then
+        echo -e "${YELLOW}Installing yay...${NC}"
+        sudo pacman -S --needed git base-devel --noconfirm >/dev/null 2>&1
+        git clone https://aur.archlinux.org/yay-bin.git >/dev/null 2>&1
+        cd yay-bin || exit
+        makepkg -si >/dev/null 2>&1
+        cd ..
+        rm -rf yay-bin
+        echo -e "${GREEN}Installed yay${NC}"
+    else
+        echo -e "${ORANGE}yay is already installed.${NC}"
+    fi
+}
+
 # ------------------------------------- Application ---------------------------
 install_app() {
     local file="$1"
@@ -23,7 +39,6 @@ install_app() {
 
 # ------------------------------------- Theme ---------------------------------
 install_theme() {
-    #-------------------------------------- Firefox & Thunderbird GTK4 theme ------
     echo -e "${YELLOW}\n\nInstalling Firefox GTK4 theme...${NC}"
     curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
 
@@ -41,7 +56,7 @@ install_font() {
     )
 
     font_links=(
-        https://github.com/pjobson/Microsoft-365-Fonts
+        # https://github.com/pjobson/Microsoft-365-Fonts
     )
 
     for font in "${font[@]}"; do
@@ -74,5 +89,6 @@ install_font() {
 
         echo -e "${YELLOW}\n\nMoving fonts to /usr/share/fonts/${NC}"
         sudo cp -r "$move_path" /usr/share/fonts/
+        rm -rf "$move_path"
     done
 }
