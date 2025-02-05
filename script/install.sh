@@ -5,7 +5,7 @@ install_yay() {
         sudo pacman -S --needed git base-devel --noconfirm >/dev/null 2>&1
         git clone https://aur.archlinux.org/yay-bin.git >/dev/null 2>&1
         cd yay-bin || exit
-        makepkg -si >/dev/null 2>&1
+        makepkg -si
         cd ..
         rm -rf yay-bin
         echo -e "${GREEN}Installed yay${NC}"
@@ -40,12 +40,15 @@ install_app() {
 # ------------------------------------- Theme ---------------------------------
 install_theme() {
     echo -e "${YELLOW}\n\nInstalling Firefox GTK4 theme...${NC}"
-    curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
+    curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh >/dev/null 2>&1 | bash
+    echo -e "${GREEN}Installed Firefox GTK4 theme${NC}"
 
     echo -e "${YELLOW}\n\nInstalling Thunderbird GTK4 theme...${NC}"
-    git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme && cd thunderbird-gnome-theme || exit
+    git clone https://github.com/rafaelmardojai/thunderbird-gnome-theme >/dev/null 2>&1 && cd thunderbird-gnome-theme || exit
     ./scripts/auto-install.sh
-
+    echo -e "${GREEN}Installed Thunderbird GTK4 theme${NC}"
+    cd ..
+    rm -rf thunderbird-gnome-theme
 }
 
 # ------------------------------------- Font -----------------------------------

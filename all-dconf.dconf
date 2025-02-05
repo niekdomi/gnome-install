@@ -85,7 +85,7 @@ sources=[('xkb', 'ch+de_nodeadkeys')]
 accent-color='purple'
 clock-show-seconds=true
 clock-show-weekday=true
-color-scheme='default'
+color-scheme='prefer-dark'
 cursor-size=24
 cursor-theme='Bibata-Modern-Ice'
 enable-hot-corners=false
@@ -226,15 +226,14 @@ command='bash -c "if [[ $(gsettings get org.gnome.settings-daemon.plugins.color 
 name='Toggle night light'
 
 [org/gnome/shell]
-enabled-extensions=['app-hider@lynith.dev', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'dash-to-dock@micxgx.gmail.com','date-menu-formatter@marcinjakubowski.github.com'], 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com',
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'app-hider@lynith.dev', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'date-menu-formatter@marcinjakubowski.github.com', 'dash-to-dock@micxgx.gmail.com', 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com']
 favorite-apps=['firefox.desktop', 'com.mitchellh.ghostty.desktop', 'org.gnome.Nautilus.desktop']
 last-selected-power-profile='performance'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=false
 
-[org/gnome/shell/extensions/app-hider]
-hidden-search-apps=['avahi-discover.desktop', 'bvnc.desktop', 'bssh.desktop', 'electron32.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'fish.desktop', 'xdvi.desktop', 'cups.desktop', 'org.gnome.Extensions.desktop']
+enabled-extensions=['app-hider@lynith.dev', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'dash-to-dock@micxgx.gmail.com','date-menu-formatter@marcinjakubowski.github.com'], 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com',
 
 [org/gnome/shell/extensions/appindicator]
 custom-icons=@a(sss) []
