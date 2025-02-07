@@ -233,8 +233,6 @@ last-selected-power-profile='performance'
 [org/gnome/shell/app-switcher]
 current-workspace-only=false
 
-enabled-extensions=['app-hider@lynith.dev', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'color-picker@tuberry', 'dash-to-dock@micxgx.gmail.com','date-menu-formatter@marcinjakubowski.github.com'], 'hibernate-status@dromi', 'mediacontrols@cliffniff.github.com', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'tilingshell@ferrarodomenico.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com',
-
 [org/gnome/shell/extensions/appindicator]
 custom-icons=@a(sss) []
 legacy-tray-enabled=true
