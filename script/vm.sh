@@ -68,4 +68,7 @@ start_kvm() {
     else
         echo -e "${ORANGE}\nThe 'default' network is already set to autostart.${NC}"
     fi
+
+    echo -e "${LIGHTBLUE}\nAdding user to libvirt group, so you don't have to enter the password every time...${NC}"
+    sudo usermod -a -G libvirt "$USER"
 }
