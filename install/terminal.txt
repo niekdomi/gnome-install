@@ -1,4 +1,5 @@
 bat                # Better cat alternative with syntax highlighting
+bat-extras         # Additional bat plugins
 btop               # Terminal based system monitor
 curl               # Download files
 eza                # Colorful ls
