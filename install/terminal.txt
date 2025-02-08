@@ -8,7 +8,7 @@ git                # Distributed version control system
 jq                 # JSON processor
 keyd               # Create custom keybindings
 lazygit            # TUI Git interface
-magick             # Image editor (needed for fastfetch images)
+imagemagick        # Image editor (needed for fastfetch images)
 npm                # Node.js package manager, required for neovim
 onedrive-abraunegg # OneDrive support (AUR)
 onefetch           # Like fastfetch but for git
