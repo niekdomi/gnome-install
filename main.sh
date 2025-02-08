@@ -2,7 +2,6 @@
 
 # TODO:
 # - gnome extension install have to be executed (manually ?) afterwards
-# - dconf must be run after extensions are installed
 # - Fix dotfile script
 # - Alias for ghostty to gnome-terminal:  sudo ln -s /usr/bin/ghostty /usr/bin/gnome-terminal
 
@@ -45,7 +44,7 @@ install_app "$themes"
 install_font
 
 # Set themes
-install_theme
+# install_theme
 
 # Install & Configure KVM
 # install_kvm
@@ -54,6 +53,7 @@ install_theme
 # Extensions
 nautilus_extension
 firefox_extension
+# gnome_extension
 
 # Configs
 bluetooth_config
