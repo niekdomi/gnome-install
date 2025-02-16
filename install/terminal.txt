@@ -1,3 +1,4 @@
+7zip               # Archiver
 bat                # Better cat alternative with syntax highlighting
 bat-extras         # Additional bat plugins
 btop               # Terminal based system monitor
