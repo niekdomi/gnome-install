@@ -10,18 +10,20 @@ obsidian                         # Obsidian
 zed-preview-bin                  # Zeditor (AUR)
 
 # Compiler, Formatter, ...
-clang            # C/C++ compiler
-# delve          # Go debugger
-# dotnet-sdk     # .NET sdk
-gcc              # C/C++ compiler
-# gdb            # Debugger
-# go             # Go language
-# jdk-openjdk    # Java sdk
-# netcoredb      # .NET debugger (AUR)
-python           # Python 3
-# python-debugpy # Python debugger
-shellcheck       # Bash linter
-shfmt            # Bash formatter
-tectonic         # LaTex engine
-texlive-basic    # LaTeX compiler and libraries
-texlive-binextra perl-yaml-tiny perl-file-homedir # Latexindent (LaTeX formatter)
+clang             # C/C++ compiler
+# delve           # Go debugger
+# dotnet-sdk      # .NET sdk
+gcc               # C/C++ compiler
+# gdb             # Debugger
+# go              # Go language
+# jdk-openjdk     # Java sdk
+# netcoredb       # .NET debugger (AUR)
+python            # Python 3
+# python-debugpy  # Python debugger
+shellcheck        # Bash linter
+shfmt             # Bash formatter
+tectonic          # LaTex engine
+texlive-basic     # LaTeX compiler and libraries
+texlive-binextra  # Latexindent (LaTeX formatter)
+perl-yaml-tiny    #
+perl-file-homedir #

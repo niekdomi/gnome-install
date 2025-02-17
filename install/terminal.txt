@@ -7,6 +7,7 @@ eza                # Colorful ls
 fish               # Shell
 fzf                # Fuzzy finder
 git                # Distributed version control system
+inetutils          # Commonly used utilities
 jq                 # JSON processor
 keyd               # Create custom keybindings
 lazygit            # TUI Git interface
