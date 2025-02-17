@@ -80,6 +80,9 @@ gnome_config() {
     else
         echo -e "${RED}\ndconf file not found...${NC}"
     fi
+
+    echo -e "${LIGHTBLUE}\nLoad background...${NC}"
+    cp -r ../catppuccin-pacman/ "$HOME"/.local/share/backgrounds
 }
 
 # ------------------------------------- shell ---------------------------------
@@ -87,8 +90,6 @@ shell_config() {
     # Change default shell
     echo -e "${LIGHTBLUE}\n\nChanging default shell...${NC}"
     chsh -s /bin/fish
-
-    # TODO: Symlink to gnome-terminal (currently buggy in ghostty)
 }
 
 system_config() {
