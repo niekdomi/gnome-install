@@ -1,4 +1,5 @@
 baobab                # GTK 4 Disk Usage Analyzer
+clapper               # Video player
 extension-manager     # GNOME extension manager (AUR)
 eog                   # GNOME image viewer
 # loupe               # GNOME image viewer
@@ -31,5 +32,4 @@ papers                # PDF viewer
 qalculate-gtk         # GUI for the Terminal calculator qalculate with GTK2/3
 resources             # System monitor
 rnote                 # Note-taking app (alternative to OneNote)
-showtime              # Video player
 snapshot              # Screenshot tool

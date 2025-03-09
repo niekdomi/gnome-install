@@ -1,13 +1,12 @@
 # Editor
-# intellij-idea-ultimate-edition # Intellij
 neovim                           # Neovim
 obsidian                         # Obsidian
 # vscodium                       # VSCode with better privacy (AUR)
 # vscodium-git-marketplace       # VSCodium with vscode marketplace (AUR)
 # code                           # Code OSS (basically vscode before MS bullshit added, is available in the extra repo)
 # visual-studio-code-bin         # Use this option if you need MS plugins like live preview or ssh (AUR)
-# zed                            # Zeditor
-zed-preview-bin                  # Zeditor (AUR)
+zathura-pdf-poppler              # PDF viewer
+zed                              # Zeditor
 
 # Compiler, Formatter, ...
 clang             # C/C++ compiler
