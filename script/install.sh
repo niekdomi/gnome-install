@@ -59,7 +59,7 @@ install_font() {
     )
 
     font_links=(
-        # https://github.com/pjobson/Microsoft-365-Fonts
+        https://github.com/pjobson/Microsoft-365-Fonts
     )
 
     for font in "${font[@]}"; do
