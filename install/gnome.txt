@@ -4,6 +4,7 @@ extension-manager     # GNOME extension manager (AUR)
 eog                   # GNOME image viewer
 # loupe               # GNOME image viewer
 fragments             # GTK 4 frontend for Transmission
+gapless-git           # Music player (AUR)
 gdm                   # GNOME Display Manager
 gdm-settings          # GNOME Display Manager settings GUI
 ghex                  # GTK4 Hex Editor

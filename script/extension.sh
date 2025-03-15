@@ -45,15 +45,11 @@ firefox_extension() {
         # UBlock Origin
         ["uBlock0@raymondhill.net"]="https://addons.mozilla.org/firefox/downloads/file/4237670/ublock_origin-1.56.0.xpi"
 
-        # WideGPT
-        ["widegpt@cstone"]="https://addons.mozilla.org/firefox/downloads/file/4224810/widegpt-1.14.xpi"
-
         # Bitwarden
         ["{446900e4-71c2-419f-a6a7-df9c091e268b}"]="https://addons.mozilla.org/firefox/downloads/file/4326285/bitwarden_password_manager-2024.7.1.xpi"
 
         # CookieAutoDelete
         ["CookieAutoDelete@kennydo.com"]="https://addons.mozilla.org/firefox/downloads/file/4040738/cookie_autodelete-3.8.2.xpi"
-
     )
 
     # Ensure the Firefox distribution extensions directory exists
@@ -76,15 +72,16 @@ firefox_extension() {
 # ------------------------------------- Gnome extensions ----------------------
 gnome_extension() {
     array=(
-        https://extensions.gnome.org/extension/615/appindicator-support/                  # AppIndicator
         https://extensions.gnome.org/extension/5895/app-hider/                            # App Hider
+        https://extensions.gnome.org/extension/615/appindicator-support/                  # AppIndicator
         https://extensions.gnome.org/extension/3193/blur-my-shell/                        # Blur My Shell
         https://extensions.gnome.org/extension/517/caffeine/                              # Caffeine
         https://extensions.gnome.org/extension/3396/color-picker/                         # Color Picker
-        https://extensions.gnome.org/extension/4655/date-menu-formatter/                  # Date Menu Formatter
         https://extensions.gnome.org/extension/307/dash-to-dock/                          # Dash to Dock
+        https://extensions.gnome.org/extension/4655/date-menu-formatter/                  # Date Menu Formatter
         https://extensions.gnome.org/extension/755/hibernate-status-button/               # Hibernate Status Button
         https://extensions.gnome.org/extension/4470/media-controls/                       # Media Controls
+        https://extensions.gnome.org/extension/3795/notification-timeout/                 # Notification Timeout
         https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/ # Quick Settings Audio Devices Renamer
         https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/        # Status Area Horizontal Spacing
         https://extensions.gnome.org/extension/7065/tiling-shell/                         # Tiling Shell
