@@ -15,7 +15,6 @@ lazygit            # TUI Git interface
 imagemagick        # Image editor (needed for fastfetch images)
 npm                # Node.js package manager, required for neovim
 onedrive-abraunegg # OneDrive support (AUR)
-onefetch           # Like fastfetch but for git
 pacman-contrib     # Some pacman tools
 pnpm               # Dependency for live-server
 ripgrep-all        # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
