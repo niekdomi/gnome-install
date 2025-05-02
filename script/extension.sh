@@ -1,7 +1,6 @@
 # ------------------------------------- Nautilus extensions -------------------
 nautilus_extension() {
     echo -e "${YELLOW}\n\nInstalling Nautilus extensions...${NC}"
-    yay -S python-nautilus --noconfirm >/dev/null 2>&1
 
     # Copy path
     git clone https://github.com/chr314/nautilus-copy-path.git >/dev/null 2>&1
@@ -10,8 +9,6 @@ nautilus_extension() {
     cd ..
     rm -rf nautilus-copy-path
 
-    # Open any terminal
-    yay -S nautilus-open-any-terminal --noconfirm >/dev/null 2>&1 # (AUR)
     echo -e "${GREEN}\nAll extensions have been installed.${NC}"
 }
 
