@@ -1,6 +1,7 @@
 # ------------------------------------- Nautilus extensions -------------------
 nautilus_extension() {
     echo -e "${YELLOW}\n\nInstalling Nautilus extensions...${NC}"
+    yay -S nautilus-python
 
     # Copy path
     git clone https://github.com/chr314/nautilus-copy-path.git >/dev/null 2>&1

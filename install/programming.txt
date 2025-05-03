@@ -19,7 +19,7 @@ gcc               # C/C++ compiler
 # netcoredb       # .NET debugger (AUR)
 python            # Python 3
 # python-debugpy  # Python debugger
-shellcheck        # Bash linter
+shellcheck-bin    # Bash linter (AUR) (The normal shellcheck package has haskell dependencies (200MB vs 15MB))
 shfmt             # Bash formatter
 tectonic          # LaTex engine
 texlive-basic     # LaTeX compiler and libraries
