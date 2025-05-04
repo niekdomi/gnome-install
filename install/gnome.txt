@@ -1,10 +1,11 @@
 baobab                # GTK 4 Disk Usage Analyzer
-clapper               # Video player
+celluloid             # Video player
+# clapper             # Video player (also needs gtuber to be installed)
 extension-manager     # GNOME extension manager (AUR)
 eog                   # GNOME image viewer
 # loupe               # GNOME image viewer
 fragments             # GTK 4 frontend for Transmission
-gapless-git           # Music player (AUR)
+# gapless             # Music player (AUR)
 gdm                   # GNOME Display Manager
 gdm-settings          # GNOME Display Manager settings GUI
 ghex                  # GTK4 Hex Editor

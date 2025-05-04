@@ -18,7 +18,6 @@ install_yay() {
 install_app() {
     local file="$1"
 
-    # Check if the file exists
     if [[ -f "$file" ]]; then
         while IFS= read -r application; do
             # Remove inline comments and trim whitespace

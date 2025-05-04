@@ -63,4 +63,4 @@ git_config
 yay_config
 shell_config
 dotfiles_config
-system_config # MUST BE AT THE END
+start_gdm # MUST BE AT THE END
