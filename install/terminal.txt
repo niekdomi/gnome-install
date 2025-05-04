@@ -1,30 +1,31 @@
-7zip               # Archiver
-bat                # Better cat alternative with syntax highlighting
-bat-extras         # Additional bat plugins
-btop               # Terminal based system monitor
-curl               # Download files
-eza                # Colorful ls
-fish               # Shell
-fzf                # Fuzzy finder
-git                # Distributed version control system
-inetutils          # Commonly used utilities
-jq                 # JSON processor
-keyd               # Create custom keybindings
-lazygit            # TUI Git interface
-imagemagick        # Image editor (needed for fastfetch images)
-npm                # Node.js package manager, required for neovim
-onedrive-abraunegg # OneDrive support (AUR)
-pacman-contrib     # Some pacman tools
-pnpm               # Dependency for live-server
-ripgrep-all        # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
-starship           # Shell prompt
-tokei              # Count code lines
-tealdeer           # Faster tldr written in rust
-trash-cli          # Control trash through terminal
-tree-sitter-cli    # Required for latex treesitter
-wget               # Download files
-wl-clipboard       # Required for neovim to copy to clipboard
-xdg-terminal-exec  # A way to configure the default terminal (AUR)
-yazi               # Terminal file manager
-zip                # zip, zap, zup
-zoxide             # Better cd for faster file system navigation
+7zip                # Archiver
+bat                 # Better cat alternative with syntax highlighting
+bat-extras          # Additional bat plugins
+btop                # Terminal based system monitor
+curl                # Download files
+eza                 # Colorful ls
+fish                # Shell
+fzf                 # Fuzzy finder
+git                 # Distributed version control system
+inetutils           # Commonly used utilities
+jq                  # JSON processor
+keyd                # Create custom keybindings
+lazygit             # TUI Git interface
+imagemagick         # Image editor (needed for fastfetch images)
+npm                 # Node.js package manager, required for neovim
+onedrive-abraunegg  # OneDrive support (AUR)
+pacman-contrib      # Some pacman tools
+perl-image-exiftool # Exiftool, used in yazi
+pnpm                # Dependency for live-server
+ripgrep-all         # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+starship            # Shell prompt
+tokei               # Count code lines
+tealdeer            # Faster tldr written in rust
+trash-cli           # Control trash through terminal
+tree-sitter-cli     # Required for latex treesitter
+wget                # Download files
+wl-clipboard        # Required for neovim to copy to clipboard
+xdg-terminal-exec   # A way to configure the default terminal (AUR)
+yazi                # Terminal file manager
+zip                 # zip, zap, zup
+zoxide              # Better cd for faster file system navigation
