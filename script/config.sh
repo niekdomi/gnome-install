@@ -125,3 +125,66 @@ dotfiles_config() {
     cd dotfiles
     ./update_dotfiles.sh -l
 }
+
+# ------------------------------------- Keyd ----------------------------------
+keyd_config() {
+    echo -e "${LIGHTBLUE}\n\nConfiguring keyd (custom key remapping)...${NC}"
+
+    if ! command -v keyd &>/dev/null; then
+        echo -e "${RED}\nkeyd is not installed. Please install keyd first.${NC}"
+        return 1
+    fi
+
+    if [[ ! -f "default.conf" ]]; then
+        echo -e "${RED}\nkeyd configuration file 'default.conf' not found in current directory.${NC}"
+        return 1
+    fi
+
+    if ! sudo mkdir -p /etc/keyd; then
+        echo -e "${RED}\nFailed to create /etc/keyd directory.${NC}"
+        return 1
+    fi
+
+    echo -e "${YELLOW}\nCopying keyd configuration...${NC}"
+    if sudo cp default.conf /etc/keyd/default.conf; then
+        sudo chmod 644 /etc/keyd/default.conf
+        sudo chown root:root /etc/keyd/default.conf
+        echo -e "${GREEN}\nkeyd configuration file copied successfully.${NC}"
+    else
+        echo -e "${RED}\nFailed to copy keyd configuration file.${NC}"
+        return 1
+    fi
+
+    echo -e "${YELLOW}\nEnabling and starting keyd service...${NC}"
+    if sudo systemctl enable keyd; then
+        if sudo systemctl start keyd; then
+            echo -e "${GREEN}\nkeyd service enabled and started successfully.${NC}"
+        else
+            echo -e "${RED}\nFailed to start keyd service.${NC}"
+            return 1
+        fi
+    else
+        echo -e "${RED}\nFailed to enable keyd service.${NC}"
+        return 1
+    fi
+
+    echo -e "${YELLOW}\nReloading keyd configuration...${NC}"
+    if sudo keyd reload; then
+        echo -e "${GREEN}\nkeyd configuration reloaded successfully.${NC}"
+    else
+        echo -e "${RED}\nFailed to reload keyd configuration.${NC}"
+        return 1
+    fi
+
+    if sudo systemctl is-active keyd >/dev/null 2>&1; then
+        echo -e "${GREEN}\nkeyd is running and configured successfully.${NC}"
+        echo -e "${LIGHTBLUE}\nCapital Lock key is now remapped for vim-style navigation:${NC}"
+        echo -e "${LIGHTBLUE}\n  - CapsLock + h/j/k/l = Arrow keys${NC}"
+        echo -e "${LIGHTBLUE}\n  - CapsLock + 1-0/-/= = F1-F12${NC}"
+        echo -e "${LIGHTBLUE}\n  - CapsLock + Backspace = Delete${NC}"
+        echo -e "${LIGHTBLUE}\n  - CapsLock + Escape = Toggle CapsLock${NC}"
+    else
+        echo -e "${RED}\nkeyd service is not running properly.${NC}"
+        return 1
+    fi
+}

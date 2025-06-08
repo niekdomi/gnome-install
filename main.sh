@@ -63,4 +63,6 @@ git_config
 yay_config
 shell_config
 dotfiles_config
+gnome_theme_switcher
+keyd_config
 start_gdm # MUST BE AT THE END
