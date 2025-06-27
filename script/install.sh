@@ -29,6 +29,7 @@ install_app() {
             echo -e "${YELLOW}Installing $application...${NC}"
             yay -S "$application" --noconfirm >/dev/null 2>&1
             echo -e "${GREEN}Installed $application${NC}"
+            echo "------------------------------"
         done <"$file"
     else
         echo -e "${RED}Error: File '$file' not found.${NC}"
@@ -65,7 +66,6 @@ install_font() {
         echo -e "${YELLOW}Installing $font...${NC}"
         yay -S "$font" --noconfirm >/dev/null 2>&1
         echo -e "${GREEN}Installed $font${NC}"
-        echo "------------------------------"
     done
 
     for link in "${font_links[@]}"; do
