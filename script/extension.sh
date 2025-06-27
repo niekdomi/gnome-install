@@ -40,7 +40,7 @@ firefox_extension() {
         # Dark Reader
         ["addon@darkreader.org"]="https://addons.mozilla.org/firefox/downloads/file/4249607/darkreader-4.9.80.xpi"
 
-        # UBlock Origin
+        # uBlock Origin
         ["uBlock0@raymondhill.net"]="https://addons.mozilla.org/firefox/downloads/file/4237670/ublock_origin-1.56.0.xpi"
 
         # Bitwarden

@@ -65,6 +65,7 @@ install_font() {
         echo -e "${YELLOW}Installing $font...${NC}"
         yay -S "$font" --noconfirm >/dev/null 2>&1
         echo -e "${GREEN}Installed $font${NC}"
+        echo "------------------------------"
     done
 
     for link in "${font_links[@]}"; do

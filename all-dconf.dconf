@@ -1,76 +1,3 @@
-[io/github/realmazharhussain/GdmSettings/appearance]
-accent-color='purple'
-background-image='/usr/share/backgrounds/gnome/blobs-d.svg'
-background-type='image'
-cursor-theme='Bibata-Modern-Ice'
-icon-theme='Papirus-Dark'
-
-[io/github/realmazharhussain/GdmSettings/fonts]
-antialiasing='grayscale'
-font='Cantarell 11'
-hinting='slight'
-scaling-factor=1.5000000000000004
-
-[io/github/realmazharhussain/GdmSettings/misc]
-disable-restart-buttons=false
-disable-user-list=false
-enable-logo=true
-enable-welcome-message=false
-logo='/usr/share/pixmaps/archlinux-logo-text-dark.svg'
-welcome-message=''
-
-[io/github/realmazharhussain/GdmSettings/mouse]
-natural-scrolling=false
-pointer-acceleration='default'
-speed=0.0
-
-[io/github/realmazharhussain/GdmSettings/night-light]
-enabled=false
-end-hour=0
-end-minute=0
-schedule-automatic=false
-start-hour=0
-start-minute=0
-temperature=uint32 4700
-
-[io/github/realmazharhussain/GdmSettings/pointing]
-cursor-size=32
-
-[io/github/realmazharhussain/GdmSettings/power]
-auto-power-saver=true
-blank-screen=true
-dim-screen=true
-idle-delay=5.0
-power-button-action='interactive'
-suspend-on-ac=true
-suspend-on-ac-delay=15.0
-suspend-on-battery=true
-suspend-on-battery-delay=15.0
-
-[io/github/realmazharhussain/GdmSettings/sound]
-event-sounds=true
-feedback-sounds=false
-over-amplification=false
-theme='freedesktop'
-
-[io/github/realmazharhussain/GdmSettings/top-bar]
-show-battery-percentage=true
-show-seconds=true
-show-weekday=true
-time-format='24h'
-
-[io/github/realmazharhussain/GdmSettings/touchpad]
-disable-while-typing=true
-natural-scrolling=true
-speed=0.0
-tap-to-click=true
-two-finger-scrolling=true
-
-[io/github/realmazharhussain/GdmSettings/window-state]
-height=uint32 615
-last-visited-page='pointing'
-width=uint32 1061
-
 [org/gnome/desktop/applications/terminal]
 exec='ghostty'
 
@@ -135,23 +62,6 @@ unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
-
-[org/gnome/eog/fullscreen]
-upscale=true
-
-[org/gnome/eog/plugins]
-active-plugins=['reload', 'fullscreen']
-
-[org/gnome/eog/ui]
-image-gallery=true
-sidebar=false
-statusbar=false
-
-[org/gnome/eog/view]
-extrapolate=false
-interpolate=false
-transparency='checked'
-use-background-color=false
 
 [org/gnome/gnome-session]
 logout-prompt=false
@@ -259,9 +169,6 @@ pipeline='pipeline_default_rounded'
 sigma=30
 static-blur=true
 style-dash-to-dock=0
-
-[org/gnome/shell/extensions/blur-my-shell/dash-to-panel]
-blur-original-panel=true
 
 [org/gnome/shell/extensions/blur-my-shell/hidetopbar]
 compatibility=false

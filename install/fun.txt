@@ -1,6 +1,6 @@
-asciiquarium-transparent-git # IS THIS A SHARK? (AUR)
-# cmatrix                    # Matrix-like screen saver
-# cowsay                     # Configurable talking cow
-fastfetch                    # Fast, highly customizable system info script
-# fortune-mod                # Prints a random, hopefully interesting, adage
-nyancat                      # FUCKING NYANCAT
+# asciiquarium-transparent-git # IS THIS A SHARK? (AUR)
+# cmatrix                      # Matrix-like screen saver
+# cowsay                       # Configurable talking cow
+fastfetch                      # Fast, highly customizable system info script
+# fortune-mod                  # Prints a random, hopefully interesting, adage
+# nyancat                      # FUCKING NYANCAT

@@ -121,9 +121,25 @@ start_gdm() {
 
 # ------------------------------------- Dotfiles ------------------------------
 dotfiles_config() {
-    git clone https://github.com/domi413/dotfiles
-    cd dotfiles
-    ./update_dotfiles.sh -l
+    echo -e "${LIGHTBLUE}\n\nConfiguring dotfiles...${NC}"
+
+    if git clone https://github.com/domi413/dotfiles; then
+        cd dotfiles || return 1
+
+        config_dirs="btop fastfetch fish ghostty lazygit nvim tealdeer yazi zathura zed starship"
+
+        if cp -r $config_dirs ~/.config/; then
+            echo -e "${GREEN}\nDotfiles configured successfully...${NC}"
+        else
+            echo -e "${RED}\nFailed to copy dotfiles...${NC}"
+            return 1
+        fi
+
+        cd ..
+    else
+        echo -e "${RED}\nFailed to clone dotfiles repository...${NC}"
+        return 1
+    fi
 }
 
 # ------------------------------------- Keyd ----------------------------------
