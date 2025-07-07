@@ -13,6 +13,7 @@ jq                  # JSON processor
 keyd                # Create custom keybindings
 lazygit             # TUI Git interface
 imagemagick         # Image editor (needed for fastfetch images)
+mediainfo           # Media information
 npm                 # Node.js package manager, required for neovim
 onedrive-abraunegg  # OneDrive support (AUR)
 pacman-contrib      # Some pacman tools

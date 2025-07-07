@@ -5,7 +5,7 @@ obsidian                         # Obsidian
 # vscodium-git-marketplace       # VSCodium with vscode marketplace (AUR)
 # code                           # Code OSS (basically vscode before MS bullshit added, is available in the extra repo)
 # visual-studio-code-bin         # Use this option if you need MS plugins like live preview or ssh (AUR)
-zathura-pdf-mupdf                # PDF viewer
+zathura-pdf-poppler              # PDF viewer
 zed                              # Zed
 
 # Compiler, Formatter, ...
