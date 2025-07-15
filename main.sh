@@ -58,7 +58,6 @@ firefox_extension
 # Configs
 bluetooth_config
 cups_config
-git_config
 # gnome_config
 yay_config
 shell_config

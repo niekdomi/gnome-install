@@ -35,45 +35,6 @@ cups_config() {
     fi
 }
 
-# ------------------------------------- Configure Git -------------------------
-git_config() {
-    set +e
-
-    echo -e "${ORANGE}\n\nPlease configure Git user name and email:${NC}"
-
-    # Check if a Git user name is already set
-    existingGitUserName=$(git config --global user.name)
-    if [ -n "$existingGitUserName" ]; then
-        echo "Current Git user name is: $existingGitUserName"
-        read -rp "Do you want to keep this user name? (y/n): " keepUserName
-
-        if [ "$keepUserName" != "y" ]; then
-            read -rp "Enter new Git user name: " gitUserName
-            git config --global user.name "$gitUserName"
-        fi
-    else
-        read -rp "Enter Git user name: " gitUserName
-        git config --global user.name "$gitUserName"
-    fi
-
-    # Check if a Git email is already set
-    existingGitEmail=$(git config --global user.email)
-    if [ -n "$existingGitEmail" ]; then
-        echo "Current Git email is: $existingGitEmail"
-        read -rp "Do you want to keep this email? (y/n): " keepEmail
-
-        if [ "$keepEmail" != "y" ]; then
-            read -rp "Enter new Git email: " gitEmail
-            git config --global user.email "$gitEmail"
-        fi
-    else
-        read -rp "Enter Git email: " gitEmail
-        git config --global user.email "$gitEmail"
-    fi
-
-    set -e
-}
-
 # ------------------------------------- yay -----------------------------------
 yay_config() {
     # Enable review option
