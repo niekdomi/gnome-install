@@ -48,6 +48,9 @@ firefox_extension() {
 
         # CookieAutoDelete
         ["CookieAutoDelete@kennydo.com"]="https://addons.mozilla.org/firefox/downloads/file/4040738/cookie_autodelete-3.8.2.xpi"
+
+        # Refined GitHub
+        ["{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}"]="https://addons.mozilla.org/firefox/downloads/file/4524491/refined_github-25.7.1.xpi"
     )
 
     # Ensure the Firefox distribution extensions directory exists

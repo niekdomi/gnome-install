@@ -16,6 +16,7 @@ imagemagick         # Image editor (needed for fastfetch images)
 mediainfo           # Media information
 npm                 # Node.js package manager, required for neovim
 onedrive-abraunegg  # OneDrive support (AUR)
+ouch                # Compression/decompression tool, needed for yazi
 pacman-contrib      # Some pacman tools
 perl-image-exiftool # Exiftool, used in yazi
 pnpm                # Dependency for live-server

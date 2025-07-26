@@ -1,6 +1,6 @@
 baobab                # GTK 4 Disk Usage Analyzer
-celluloid             # Video player
-# clapper             # Video player (also needs gtuber to be installed)
+celluloid             # Video players (GTK3)
+# clapper             # Video player (GTK4 but kinda buggy)
 extension-manager     # GNOME extension manager (AUR)
 eog                   # GNOME image viewer
 # loupe               # GNOME image viewer
@@ -13,6 +13,7 @@ ghostty               # Terminal emulator
 gnome-2048            # Gnome 2048
 gnome-backgrounds     # GNOME default wallpapers
 gnome-calendar        # Calendar application
+gnome-characters      # Emojis
 gnome-clocks          # Clock app for time management
 gnome-color-manager   # Color management tool
 gnome-control-center  # GNOME system settings
