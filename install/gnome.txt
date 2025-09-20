@@ -8,7 +8,7 @@ fragments             # GTK 4 frontend for Transmission
 # gapless             # Music player (AUR)
 gdm                   # GNOME Display Manager
 gdm-settings          # GNOME Display Manager settings GUI
-ghex                  # GTK4 Hex Editor
+# ghex                # GTK4 Hex Editor
 ghostty               # Terminal emulator
 gnome-2048            # Gnome 2048
 gnome-backgrounds     # GNOME default wallpapers
@@ -28,12 +28,12 @@ gnome-sound-recorder  # Sound recording tool
 gnome-sudoku          # GNOME Sudoku game
 # gnome-tweaks        # Edit gnome
 meld                  # Compare multiple files
-metadata-cleaner      # Clean metadata from files
+# metadata-cleaner    # Clean metadata from files
 # mission-center      # System monitor
 nautilus              # GNOME file manager
 papers                # PDF viewer
 qalculate-gtk         # GUI for the Terminal calculator qalculate with GTK2/3
-refined               # Better gnome-tweaks
+# refined             # More Modern gnome-tweaks
 resources             # System monitor
 rnote                 # Note-taking app (alternative to OneNote)
-snapshot              # Screenshot tool
+snapshot              # Camera

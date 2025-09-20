@@ -1,6 +1,4 @@
 firefox             # Firefox browser
-# localsend-bin     # Local network file transfer (AirDrop alternative) (AUR)
-# r-quick-share-bin # Share files quickly (AUR)
 spotify             # Spotify for Linux (AUR)
 teams-for-linux     # Teams client for Linux (AUR)
 thunderbird         # Thunderbird mail
@@ -8,4 +6,4 @@ vesktop-bin         # Discord with plugins and themes (AUR)
 zapzap              # qt6-based Whatsapp client for Linux (AUR)
 
 # Ther is a GTK4 Whatsapp client called "whakarere" but its still buggy af
-# zapzap is currently the only application (on this gnome-DE) with qt(6) dependencies
+# zapzap is currently the only application (on this desktop) with qt6 dependencies

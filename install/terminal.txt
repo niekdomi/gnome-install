@@ -19,7 +19,8 @@ onedrive-abraunegg  # OneDrive support (AUR)
 ouch                # Compression/decompression tool, needed for yazi
 pacman-contrib      # Some pacman tools
 perl-image-exiftool # Exiftool, used in yazi
-pnpm                # Dependency for live-server
+perl-yaml-tiny      # YAML parser
+perl-file-homedir   # Required for yazi
 ripgrep-all         # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 starship            # Shell prompt
 tokei               # Count code lines

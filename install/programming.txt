@@ -10,19 +10,17 @@ zed                              # Zed
 
 # Compiler, Formatter, ...
 clang             # C/C++ compiler
-# delve           # Go debugger
 # dotnet-sdk      # .NET sdk
 gcc               # C/C++ compiler
-# gdb             # Debugger
-# go              # Go language
+go                # Go language
 # jdk-openjdk     # Java sdk
-# netcoredb       # .NET debugger (AUR)
 python            # Python 3
-# python-debugpy  # Python debugger
-shellcheck-bin    # Bash linter (AUR) (The normal shellcheck package has haskell dependencies (200MB vs 15MB))
+shellcheck-bin    # Bash linter (AUR) (The normal shellcheck package has all the haskell dependencies (200MB vs 15MB))
 shfmt             # Bash formatter
-tectonic          # LaTex engine
-texlive-basic     # LaTeX compiler and libraries
-texlive-binextra  # Latexindent (LaTeX formatter)
-perl-yaml-tiny    #
-perl-file-homedir #
+
+# LaTeX
+# tectonic          # LaTex engine
+# texlive-basic     # LaTeX compiler and libraries
+# texlive-binextra  # Latexindent (LaTeX formatter)
+texlive             # LaTeX compiler and libraries
+
