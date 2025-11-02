@@ -15,8 +15,6 @@ gcc               # C/C++ compiler
 go                # Go language
 # jdk-openjdk     # Java sdk
 python            # Python 3
-shellcheck-bin    # Bash linter (AUR) (The normal shellcheck package has all the haskell dependencies (200MB vs 15MB))
-shfmt             # Bash formatter
 
 # LaTeX
 # tectonic          # LaTex engine

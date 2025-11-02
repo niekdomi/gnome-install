@@ -40,6 +40,9 @@ yay_config() {
     # Enable review option
     echo -e "${LIGHTBLUE}\n\nEnabling editmenu for yay...${NC}"
     yay --editmenu --save
+
+    # NOTE: Setting `"removemake": "yes"` in `~/.config/yay/config.json`
+    # will always remove dependencies from AUR packages
 }
 
 # ------------------------------------- Gnome ---------------------------------
@@ -89,7 +92,7 @@ dotfiles_config() {
 
         config_dirs="btop fastfetch fish ghostty lazygit nvim tealdeer yazi zathura zed starship"
 
-        if cp -r $config_dirs ~/.config/; then
+        if cp -r "$config_dirs" ~/.config/; then
             echo -e "${GREEN}\nDotfiles configured successfully...${NC}"
         else
             echo -e "${RED}\nFailed to copy dotfiles...${NC}"

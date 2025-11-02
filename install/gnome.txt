@@ -10,7 +10,7 @@ gdm                   # GNOME Display Manager
 gdm-settings          # GNOME Display Manager settings GUI
 # ghex                # GTK4 Hex Editor
 ghostty               # Terminal emulator
-gnome-2048            # Gnome 2048
+# gnome-2048          # Gnome 2048
 gnome-backgrounds     # GNOME default wallpapers
 gnome-calendar        # Calendar application
 gnome-characters      # Emojis
@@ -18,14 +18,13 @@ gnome-clocks          # Clock app for time management
 gnome-color-manager   # Color management tool
 gnome-control-center  # GNOME system settings
 gnome-disk-utility    # Disk management tool
-gnome-font-viewer     # View and install fonts
 gnome-keyring         # Manages passwords and keys
 gnome-menus           # GNOME application menus
 gnome-session         # Manages GNOME session
 gnome-settings-daemon # Handles various GNOME settings
 gnome-shell           # Core part of GNOME desktop
 gnome-sound-recorder  # Sound recording tool
-gnome-sudoku          # GNOME Sudoku game
+# gnome-sudoku        # GNOME Sudoku game
 # gnome-tweaks        # Edit gnome
 meld                  # Compare multiple files
 # metadata-cleaner    # Clean metadata from files
