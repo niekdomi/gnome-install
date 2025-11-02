@@ -7,6 +7,7 @@ obsidian                         # Obsidian
 # visual-studio-code-bin         # Use this option if you need MS plugins like live preview or ssh (AUR)
 zathura-pdf-poppler              # PDF viewer
 zed                              # Zed
+# vulkan-radeon                  # On AMD, zed may require this package to start properly
 
 # Compiler, Formatter, ...
 clang             # C/C++ compiler
