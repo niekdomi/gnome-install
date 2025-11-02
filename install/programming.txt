@@ -11,6 +11,8 @@ zed                              # Zed
 
 # Compiler, Formatter, ...
 clang             # C/C++ compiler
+cmake             # CMake
+ninja             # Ninja
 # dotnet-sdk      # .NET sdk
 gcc               # C/C++ compiler
 go                # Go language
