@@ -87,7 +87,7 @@ start_gdm() {
 dotfiles_config() {
     echo -e "${LIGHTBLUE}\n\nConfiguring dotfiles...${NC}"
 
-    if git clone https://github.com/domi413/dotfiles; then
+    if git clone https://github.com/niekdomi/dotfiles; then
         cd dotfiles || return 1
 
         config_dirs="btop fastfetch fish ghostty lazygit nvim tealdeer yazi zathura zed starship"
