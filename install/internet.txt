@@ -1,9 +1,7 @@
 firefox             # Firefox browser
+karere              # GTK4 Whatsapp client (AUR)
 spotify             # Spotify for Linux (AUR)
 teams-for-linux     # Teams client for Linux (AUR)
 thunderbird         # Thunderbird mail
-vesktop-bin         # Discord with plugins and themes (AUR)
-zapzap              # qt6-based Whatsapp client for Linux (AUR)
-
-# Ther is a GTK4 Whatsapp client called "whakarere" but its still buggy af
-# zapzap is currently the only application (on this desktop) with qt6 dependencies
+# vesktop-bin       # Discord with plugins and themes (AUR) (has qt6 dependencies)
+zapzap              # Whatsapp client for Linux (AUR)

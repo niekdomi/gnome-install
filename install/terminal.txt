@@ -1,7 +1,7 @@
 7zip                # Archiver
-bat                 # Better cat alternative with syntax highlighting
-bat-extras          # Additional bat plugins
+bat                 # Better cat alternative with syntax highlighting (only required for zed (when they merge the telescope modal, this can be removed))
 btop                # Terminal based system monitor
+bun                 # JavaScript runtime
 curl                # Download files
 eza                 # Colorful ls
 fish                # Shell
@@ -14,9 +14,8 @@ keyd                # Create custom keybindings
 lazygit             # TUI Git interface
 imagemagick         # Image editor (needed for fastfetch images)
 mediainfo           # Media information
-npm                 # Node.js package manager, required for neovim
 onedrive-abraunegg  # OneDrive support (AUR)
-ouch                # Compression/decompression tool, needed for yazi
+ouch                # Compression/decompression tool, needed for yazi -> TODO drop this in favor of 7zip / zip
 pacman-contrib      # Some pacman tools
 perl-image-exiftool # Exiftool, used in yazi
 perl-yaml-tiny      # YAML parser
@@ -33,3 +32,4 @@ xdg-terminal-exec   # A way to configure the default terminal (AUR)
 yazi                # Terminal file manager
 zip                 # zip, zap, zup
 zoxide              # Better cd for faster file system navigation
+

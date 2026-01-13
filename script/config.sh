@@ -56,19 +56,6 @@ gnome_config() {
     else
         echo -e "${RED}\ndconf file not found...${NC}"
     fi
-
-    echo -e "${LIGHTBLUE}\nLoad background...${NC}"
-    mkdir -p ~/.local/share/backgrounds
-    if cp -r Catppuccin-pacman "$HOME"/.local/share/backgrounds/; then
-        mkdir -p ~/.local/share/gnome-background-properties
-        if cp catppuccin-pacman.xml ~/.local/share/gnome-background-properties/; then
-            echo -e "${GREEN}\nBackground loaded successfully...${NC}"
-        else
-            echo -e "${RED}\nFailed to copy XML file...${NC}"
-        fi
-    else
-        echo -e "${RED}\nFailed to copy background...${NC}"
-    fi
 }
 
 # ------------------------------------- shell ---------------------------------

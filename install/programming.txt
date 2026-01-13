@@ -1,9 +1,9 @@
 # Editor
 neovim                           # Neovim
-obsidian                         # Obsidian
+# obsidian                       # Obsidian
 # vscodium                       # VSCode with better privacy (AUR)
 # vscodium-git-marketplace       # VSCodium with vscode marketplace (AUR)
-# code                           # Code OSS (basically vscode before MS bullshit added, is available in the extra repo)
+code                             # Code OSS (basically vscode before MS bullshit added, is available in the extra repo)
 # visual-studio-code-bin         # Use this option if you need MS plugins like live preview or ssh (AUR)
 zathura-pdf-poppler              # PDF viewer
 zed                              # Zed
@@ -11,10 +11,13 @@ zed                              # Zed
 
 # Compiler, Formatter, ...
 clang             # C/C++ compiler
+lldb              # C++ debugger
+# llvm            # Compiler Infrastructure, adds tool such as llvm-cov
 cmake             # CMake
+conan-bin         # C/C++ package manager
 ninja             # Ninja
 # dotnet-sdk      # .NET sdk
-gcc               # C/C++ compiler
+# gcc             # C/C++ compiler
 go                # Go language
 # jdk-openjdk     # Java sdk
 python            # Python 3
@@ -23,5 +26,5 @@ python            # Python 3
 # tectonic          # LaTex engine
 # texlive-basic     # LaTeX compiler and libraries
 # texlive-binextra  # Latexindent (LaTeX formatter)
-texlive             # LaTeX compiler and libraries
+# texlive           # LaTeX compiler and libraries
 
