@@ -9,6 +9,7 @@
 source "script/config.sh"
 source "script/extension.sh"
 source "script/install.sh"
+source "script/gnome_theme_switcher.sh"
 source "script/vm.sh"
 
 # Color Definitions
