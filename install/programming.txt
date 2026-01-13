@@ -21,6 +21,7 @@ ninja             # Ninja
 go                # Go language
 # jdk-openjdk     # Java sdk
 python            # Python 3
+uv                # Python package manager
 
 # LaTeX
 # tectonic          # LaTex engine
