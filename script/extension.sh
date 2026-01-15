@@ -77,7 +77,7 @@ firefox_extension() {
 gnome_extension() {
     array=(
         https://extensions.gnome.org/extension/5895/app-hider/                            # App Hider
-        https://extensions.gnome.org/extension/615/appindicator-support/                  # AppIndicator
+        https://extensions.gnome.org/extension/615/appindicator-support/                  # System Tray Indicator
         https://extensions.gnome.org/extension/3193/blur-my-shell/                        # Blur My Shell
         https://extensions.gnome.org/extension/517/caffeine/                              # Caffeine
         https://extensions.gnome.org/extension/3396/color-picker/                         # Color Picker
@@ -87,6 +87,7 @@ gnome_extension() {
         https://extensions.gnome.org/extension/4470/media-controls/                       # Media Controls
         https://extensions.gnome.org/extension/3795/notification-timeout/                 # Notification Timeout
         https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/ # Quick Settings Audio Devices Renamer
+        https://extensions.gnome.org/extension/8505/static-workspace-background/          # Static Workspace Background
         https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/        # Status Area Horizontal Spacing
         https://extensions.gnome.org/extension/7065/tiling-shell/                         # Tiling Shell
         https://extensions.gnome.org/extension/1414/unblank/                              # Unblank
