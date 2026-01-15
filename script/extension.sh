@@ -29,28 +29,31 @@ firefox_extension() {
     # Define extension URLs and their IDs
     declare -A extensions=(
         # Youtube Dislike
-        ["{762f9885-5a13-4abd-9c77-433dcd38b8fd}"]="https://addons.mozilla.org/firefox/downloads/file/4208483/return_youtube_dislikes-3.0.0.14.xpi"
+        ["{762f9885-5a13-4abd-9c77-433dcd38b8fd}"]="https://addons.mozilla.org/firefox/downloads/file/4371820/return_youtube_dislikes-3.0.0.18.xpi"
 
         # Nyan Cat
-        ["{c3348e96-6d84-47dc-8252-4b8493299efc}"]="https://addons.mozilla.org/firefox/downloads/file/3975526/nyan_cat_youtube_enhancement-3.0.xpi"
+        ["{c3348e96-6d84-47dc-8252-4b8493299efc}"]="https://addons.mozilla.org/firefox/downloads/file/4375320/nyan_cat_youtube_enhancement-3.1.xpi"
 
         # Vimium
-        ["{d7742d87-e61d-4b78-b8a1-b469842139fa}"]="https://addons.mozilla.org/firefox/downloads/file/4259790/vimium_ff-2.1.2.xpi"
+        ["{d7742d87-e61d-4b78-b8a1-b469842139fa}"]="https://addons.mozilla.org/firefox/downloads/file/4618554/vimium_ff-2.3.1.xpi"
 
         # Dark Reader
-        ["addon@darkreader.org"]="https://addons.mozilla.org/firefox/downloads/file/4249607/darkreader-4.9.80.xpi"
+        ["addon@darkreader.org"]="https://addons.mozilla.org/firefox/downloads/file/4665768/darkreader-4.9.119.xpi"
 
         # uBlock Origin
-        ["uBlock0@raymondhill.net"]="https://addons.mozilla.org/firefox/downloads/file/4237670/ublock_origin-1.56.0.xpi"
+        ["uBlock0@raymondhill.net"]="https://addons.mozilla.org/firefox/downloads/file/4629131/ublock_origin-1.68.0.xpi"
 
         # Bitwarden
-        ["{446900e4-71c2-419f-a6a7-df9c091e268b}"]="https://addons.mozilla.org/firefox/downloads/file/4326285/bitwarden_password_manager-2024.7.1.xpi"
+        ["{446900e4-71c2-419f-a6a7-df9c091e268b}"]="https://addons.mozilla.org/firefox/downloads/file/4664623/bitwarden_password_manager-2025.12.1.xpi"
 
         # CookieAutoDelete
         ["CookieAutoDelete@kennydo.com"]="https://addons.mozilla.org/firefox/downloads/file/4040738/cookie_autodelete-3.8.2.xpi"
 
         # Refined GitHub
-        ["{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}"]="https://addons.mozilla.org/firefox/downloads/file/4524491/refined_github-25.7.1.xpi"
+        ["{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}"]="https://addons.mozilla.org/firefox/downloads/file/4658607/refined_github-26.1.6.xpi"
+
+        # SponsorBlock
+        ["sponsorBlocker@ajay.app"]="https://addons.mozilla.org/firefox/downloads/file/4644570/sponsorblock-6.1.2.xpi"
     )
 
     # Ensure the Firefox distribution extensions directory exists
