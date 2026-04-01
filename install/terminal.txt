@@ -19,7 +19,7 @@ pacman-contrib      # Some pacman tools
 perl-image-exiftool # Exiftool, used in yazi
 perl-yaml-tiny      # YAML parser
 perl-file-homedir   # Required for yazi
-ripdrag             # Drag-and-drop GUI (used in yazi)
+ripdrag             # Drag-and-drop GUI (used in yazi) (AUR)
 ripgrep-all         # Ripgrep, but search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 starship            # Shell prompt
 tokei               # Count code lines
