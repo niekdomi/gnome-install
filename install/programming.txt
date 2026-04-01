@@ -10,11 +10,11 @@ zed                              # Zed
 # vulkan-radeon                  # On AMD, zed may require this package to start properly
 
 # Compiler, Formatter, ...
+ccache            # C++ Cache
 clang             # C/C++ compiler
 lldb              # C++ debugger
-# llvm            # Compiler Infrastructure, adds tool such as llvm-cov
+# llvm            # Compiler Infrastructure, includes tool such as llvm-cov
 cmake             # CMake
-conan-bin         # C/C++ package manager
 ninja             # Ninja
 # dotnet-sdk      # .NET sdk
 # gcc             # C/C++ compiler
