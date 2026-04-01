@@ -29,3 +29,4 @@ uv                # Python package manager
 # texlive-binextra  # Latexindent (LaTeX formatter)
 # texlive           # LaTeX compiler and libraries
 
+typst               # Typst compiler
